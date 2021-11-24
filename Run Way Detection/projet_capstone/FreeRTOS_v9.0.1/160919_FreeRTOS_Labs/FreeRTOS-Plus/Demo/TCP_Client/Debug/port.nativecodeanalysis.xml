@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS\Source\portable\MSVC-MingW\</FILEPATH>
+      <FILENAME>port.c</FILENAME>
+      <LINE>498</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>6258</DEFECTCODE>
+    <DESCRIPTION>L'utilisation de TerminateThread ne permet pas un nettoyage approprié des threads.</DESCRIPTION>
+    <FUNCTION>vPortDeleteThread</FUNCTION>
+    <DECORATED>vPortDeleteThread</DECORATED>
+    <FUNCLINE>475</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS\Source\portable\MSVC-MingW\</FILEPATH>
+      <FILENAME>port.c</FILENAME>
+      <LINE>605</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26135</DEFECTCODE>
+    <DESCRIPTION>Annotation manquante _Acquires_lock_(pvInterruptEventMutex) pour la fonction 'vPortEnterCritical'.</DESCRIPTION>
+    <FUNCTION>vPortEnterCritical</FUNCTION>
+    <DECORATED>vPortEnterCritical</DECORATED>
+    <FUNCLINE>598</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS\Source\portable\MSVC-MingW\</FILEPATH>
+        <FILENAME>port.c</FILENAME>
+        <LINE>598</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS\Source\portable\MSVC-MingW\</FILEPATH>
+        <FILENAME>port.c</FILENAME>
+        <LINE>600</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS\Source\portable\MSVC-MingW\</FILEPATH>
+        <FILENAME>port.c</FILENAME>
+        <LINE>604</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS\Source\portable\MSVC-MingW\</FILEPATH>
+        <FILENAME>port.c</FILENAME>
+        <LINE>605</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

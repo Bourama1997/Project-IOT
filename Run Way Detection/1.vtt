@@ -1,0 +1,270 @@
+WEBVTT
+
+1
+00:00:00.770 --> 00:00:03.760
+Landing is one of the most
+critical phases during a flight.
+
+2
+00:00:03.760 --> 00:00:09.200
+It is the second thing a pilot learns in
+training after basic flight control and
+
+3
+00:00:09.200 --> 00:00:10.940
+recovery techniques.
+
+4
+00:00:10.940 --> 00:00:12.890
+Touchdown is the first phase.
+
+5
+00:00:12.890 --> 00:00:18.550
+An aircraft has to dump all this kinetic
+energy that keeps the aircraft flying.
+
+6
+00:00:18.550 --> 00:00:24.390
+It's a fine maneuver that should be
+done right, not too soft, not too hard.
+
+7
+00:00:24.390 --> 00:00:28.330
+Landing also is one of
+the most dangerous phases and
+
+8
+00:00:28.330 --> 00:00:32.922
+most aircraft accidents take place
+either during the take off or landing.
+
+9
+00:00:33.990 --> 00:00:36.720
+Instrumental guidance systems are,
+therefore,
+
+10
+00:00:36.720 --> 00:00:38.569
+a great advantage to the pilots.
+
+11
+00:00:41.080 --> 00:00:42.200
+In this project,
+
+12
+00:00:42.200 --> 00:00:45.840
+we focus on runway detection by
+using image filtering techniques.
+
+13
+00:00:46.950 --> 00:00:51.040
+Our runway detection algorithm
+is based on video frames.
+
+14
+00:00:51.040 --> 00:00:54.270
+This means that we have a camera
+mounted on the aircraft
+
+15
+00:00:54.270 --> 00:00:56.020
+which is recording the approach.
+
+16
+00:00:57.050 --> 00:01:03.510
+The frames captured by the camera is then
+forwarded to image processing algorithms.
+
+17
+00:01:03.510 --> 00:01:07.180
+To easily spot the visual
+characteristic of the runway,
+
+18
+00:01:07.180 --> 00:01:10.540
+we will filter out other details
+than the edges in the frame.
+
+19
+00:01:11.980 --> 00:01:14.660
+This makes the image simpler to process
+
+20
+00:01:14.660 --> 00:01:19.450
+because now the picture only contains
+the most basic properties for
+
+21
+00:01:19.450 --> 00:01:24.190
+determining a square runway in
+an otherwise diverse landscape.
+
+22
+00:01:26.340 --> 00:01:30.710
+Okay, so
+runway detection already exists but
+
+23
+00:01:30.710 --> 00:01:34.810
+now we want to build the next generation
+of landing system based on IoT.
+
+24
+00:01:36.230 --> 00:01:40.050
+Let's consider the aircraft
+being a complex sensor system
+
+25
+00:01:40.050 --> 00:01:43.550
+capable of recording and
+sending filtered video frames.
+
+26
+00:01:45.010 --> 00:01:48.900
+These frames can now be sent
+to a Cloud server on ground,
+
+27
+00:01:48.900 --> 00:01:51.480
+in which high performance algorithms
+
+28
+00:01:51.480 --> 00:01:55.830
+such as deep learning can be applied on
+the video frames to optimize the landing.
+
+29
+00:01:57.470 --> 00:02:02.740
+This type of heavy processing can not
+be executed on site because of lacking
+
+30
+00:02:02.740 --> 00:02:06.900
+processing power and it must therefore
+be forwarded to a Cloud server.
+
+31
+00:02:08.400 --> 00:02:12.810
+Of course, with data transfer,
+we expose a risk to leak
+
+32
+00:02:12.810 --> 00:02:16.600
+confidential information that could
+endanger the safety of the aircraft.
+
+33
+00:02:17.670 --> 00:02:19.520
+Check out Norse, my website,
+
+34
+00:02:19.520 --> 00:02:25.340
+that visualizes the realtime attempts
+to break IT security worldwise.
+
+35
+00:02:25.340 --> 00:02:30.030
+The link must, therefore,
+be secured before data transfer can begin.
+
+36
+00:02:31.420 --> 00:02:33.730
+Let's recap the project.
+
+37
+00:02:33.730 --> 00:02:37.870
+Your task is to build an autonomous
+landing system or aircraft.
+
+38
+00:02:38.920 --> 00:02:42.830
+The system should detect
+a wrong way from a video frame.
+
+39
+00:02:42.830 --> 00:02:48.270
+This is done by recording the landing
+with a camera mounted on the aircraft,
+
+40
+00:02:48.270 --> 00:02:53.360
+the image is filtered by an edge detection
+algorithm and the filtered image is
+
+41
+00:02:53.360 --> 00:02:58.930
+encrypted and sent to a Cloud server for
+further processing over a secure link.
+
+42
+00:03:00.210 --> 00:03:04.459
+This course is built on three previous
+courses of this specialization.
+
+43
+00:03:05.710 --> 00:03:08.180
+From the course embedded
+operating system and
+
+44
+00:03:08.180 --> 00:03:13.910
+hardware, you will apply your skills for
+planning the embedded hardware platform.
+
+45
+00:03:13.910 --> 00:03:18.480
+Planning the performance required for
+the processing, the cost of building such
+
+46
+00:03:18.480 --> 00:03:23.390
+system and
+the energy such a system would consume.
+
+47
+00:03:23.390 --> 00:03:28.470
+You will need to program a lot in this
+course and most of the programming
+
+48
+00:03:28.470 --> 00:03:33.582
+will be based on the course
+development of realtime systems.
+
+49
+00:03:33.582 --> 00:03:38.400
+The realtime processing of system must
+match the system requirements and
+
+50
+00:03:38.400 --> 00:03:40.450
+correct scheduling must be ensured.
+
+51
+00:03:41.530 --> 00:03:47.840
+Finally, you will need to utilize your
+skills from course web connectivity and
+
+52
+00:03:47.840 --> 00:03:52.630
+security in embedded systems to
+establish the web connectivity and
+
+53
+00:03:52.630 --> 00:03:55.750
+ensure the secure transfer
+of data to the Cloud server.
+
+54
+00:03:56.990 --> 00:03:58.452
+My name is and
+
+55
+00:03:58.452 --> 00:04:04.110
+I am a teacher in computer science at
+the University of Turku in Finland.
+
+56
+00:04:04.110 --> 00:04:08.065
+You can check out our website to learn
+more about the University of Turku.

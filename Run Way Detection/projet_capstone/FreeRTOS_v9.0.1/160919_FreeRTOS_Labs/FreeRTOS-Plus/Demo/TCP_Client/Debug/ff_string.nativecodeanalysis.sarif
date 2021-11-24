@@ -1,0 +1,258 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.27.29112.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX86\\x86\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00AD8190 -il C:\\Users\\admin\\AppData\\Local\\Temp\\_CL_bf3af523ast -typedil -f ..\\..\\Source\\FreeRTOS-Plus-FAT\\ff_string.c -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1927 -D_MSC_FULL_VER=192729112 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\Common\\FreeRTOS_Plus_CLI_Demos\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\Common\\FreeRTOS_Plus_TCP_Demos\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-FAT\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-FAT\\portable\\common -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-TCP\\protocols\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-TCP\\portable\\BufferManagement -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\DemoTasks\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-TCP\\portable\\Compiler\\MSVC -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\WinPCap -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS\\Source\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS\\Source\\portable\\MSVC-MingW -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-CLI -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\TraceMacros\\Example1 -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-TCP\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client -nologo -W 4 -diagnostics:column -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_WIN32_WINNT=0x0500 -DWINVER=0x400 -D_CRT_SECURE_NO_WARNINGS -D_VC80_UPGRADE=0x0600 -D_MBCS -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_MT -D_DLL -GS -D_M_FP_PRECISE -Fo.\\Debug/ff_string.obj -Fd.\\Debug/vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\ -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -wd 4210 -wd 4127 -wd 4214 -wd 4201 -wd 4244 -wd 4310 -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\Include\\um",
+          "executionSuccessful": true,
+          "ruleConfigurationOverrides": []
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_time.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/ff_string.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_headers.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/freertos.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_error.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/freertosfatconfigdefaults.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/freertosconfig.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_locking.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_format.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/projdefs.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/portable.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/deprecated_definitions.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_dir.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/mpu_wrappers.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/portable/msvc-mingw/portmacro.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/task.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/list.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/semphr.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/queue.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/freertosfatconfig.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/freertos_errno_fat.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_ioman.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_fat.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_fatdef.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_memory.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_crc.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_file.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_string.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-fat/include/ff_old_config_defines.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        }
+      ]
+    }
+  ]
+}

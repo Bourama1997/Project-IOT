@@ -1,0 +1,32 @@
+﻿  event_groups.c
+  ff_sys.c
+  ff_time.c
+  TCPCommandConsole.c
+  UDPCommandConsole.c
+  main.c
+  data_transmission_task.c
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(7,8): error C2061: erreur de syntaxe : identificateur 'open_tcp_connection'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(7,8): error C2059: erreur de syntaxe : ';'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(7,28): error C2059: erreur de syntaxe : '<parameter-list>'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(10,12): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'endpoint'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(10,12): error C2061: erreur de syntaxe : identificateur 'endpoint'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(10,12): error C2059: erreur de syntaxe : ';'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(10,20): error C2059: erreur de syntaxe : ','
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(13,1): error C2059: erreur de syntaxe : ')'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\data_transmission_task.c(145,24): warning C4013: 'send_data_to_server' non défini(e) ; extern retournant int pris par défaut
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\data_transmission_task.c(156,22): warning C4013: 'close_tcp_connection' non défini(e) ; extern retournant int pris par défaut
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\data_transmission_task.c(170,45): warning C4013: 'open_tcp_connection' non défini(e) ; extern retournant int pris par défaut
+  windows_socket.c
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(7,8): error C2061: erreur de syntaxe : identificateur 'open_tcp_connection'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(7,8): error C2059: erreur de syntaxe : ';'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(7,28): error C2059: erreur de syntaxe : '<parameter-list>'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(10,12): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'endpoint'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(10,12): error C2061: erreur de syntaxe : identificateur 'endpoint'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(10,12): error C2059: erreur de syntaxe : ';'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(10,20): error C2059: erreur de syntaxe : ','
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.h(13,1): error C2059: erreur de syntaxe : ')'
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.c(91,52): warning C4047: 'fonction' : les niveaux d'indirection de 'freertos_sockaddr *' et de 'uint16_t' sont différents
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.c(91,43): warning C4024: 'FreeRTOS_bind' : types différents pour le paramètre formel et réel 2
+C:\Users\admin\Desktop\cour\cour_video\Run_Way_Detection\projet_capstone\FreeRTOS_v9.0.1\160919_FreeRTOS_Labs\FreeRTOS-Plus\Demo\TCP_Client\RunwayDetection\DataTransmissionTask\windows_socket.c(139,36): warning C4018: '<' : incompatibilité signed/unsigned
+  DemoIPTrace.c
+  Génération de code en cours...

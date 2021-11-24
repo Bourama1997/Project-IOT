@@ -1,0 +1,277 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.455
+In this lecture, we will explain what to actually program.
+
+2
+00:00:04.455 --> 00:00:07.455
+We show this by looking at the code a bit and
+
+3
+00:00:07.455 --> 00:00:10.620
+telling more detailed instructions about what to program.
+
+4
+00:00:10.620 --> 00:00:16.130
+Let's go back to where's your list to do and the edge detection algorithm.
+
+5
+00:00:16.130 --> 00:00:21.165
+Open the provided code in canny.c from the coursework page.
+
+6
+00:00:21.165 --> 00:00:28.555
+The given c code detects the edges on an input image in the bitmap format.
+
+7
+00:00:28.555 --> 00:00:31.330
+More details about the algorithm is available
+
+8
+00:00:31.330 --> 00:00:34.390
+in another lecture in this course and its wiki page.
+
+9
+00:00:34.390 --> 00:00:41.700
+So open canny.c, and there we get to the function, canny edge detection.
+
+10
+00:00:41.700 --> 00:00:47.235
+This function calls the actual mechanism to detect the edges.
+
+11
+00:00:47.235 --> 00:00:52.150
+It takes the argument in bitmap data where you must
+
+12
+00:00:52.150 --> 00:00:59.125
+properly read the input file and forward the bitmap to its function.
+
+13
+00:00:59.125 --> 00:01:06.217
+Inside function, we can see the arguments as the bitmap,
+
+14
+00:01:06.217 --> 00:01:12.246
+it's information header, and some control variables to the function.
+
+15
+00:01:12.246 --> 00:01:17.225
+The control variables determines the thresholds for detecting an edge,
+
+16
+00:01:17.225 --> 00:01:21.915
+and the default values are 20, 80, and 1.0.
+
+17
+00:01:21.915 --> 00:01:26.790
+You can experiment with these values to get an accurate image.
+
+18
+00:01:26.790 --> 00:01:30.905
+If we scroll down in this function,
+
+19
+00:01:30.905 --> 00:01:34.550
+we get into return value of the function.
+
+20
+00:01:34.550 --> 00:01:41.535
+This is actually the filtered image frame from the data type pixel_t pointer,
+
+21
+00:01:41.535 --> 00:01:46.500
+and this frame is what you need to transmit to the encryption function.
+
+22
+00:01:46.500 --> 00:01:48.915
+Using the provided code,
+
+23
+00:01:48.915 --> 00:01:52.550
+you need to create all the FreeRTOS tasks.
+
+24
+00:01:52.550 --> 00:01:55.910
+You decide that is necessary for making the system modular enough.
+
+25
+00:01:55.910 --> 00:02:00.770
+Demonstrate that the edge detection works by outputting
+
+26
+00:02:00.770 --> 00:02:07.295
+the featured frame to a file and convert this file back into a bitmap image.
+
+27
+00:02:07.295 --> 00:02:11.690
+Demonstrate that this algorithm is fast enough to
+
+28
+00:02:11.690 --> 00:02:15.738
+provide a 25-frames-per-second performance.
+
+29
+00:02:15.738 --> 00:02:18.013
+Using the provided encryption code,
+
+30
+00:02:18.013 --> 00:02:21.556
+you need to create all the FreeRTOS tasks.
+
+31
+00:02:21.556 --> 00:02:25.613
+You decide it is necessary for making the system modular enough.
+
+32
+00:02:25.613 --> 00:02:31.680
+Demonstrate that the algorithm works by encrypting and decrypting some data.
+
+33
+00:02:31.680 --> 00:02:35.000
+Create a proper communication channel between
+
+34
+00:02:35.000 --> 00:02:38.535
+the edge detection task and the encryption task.
+
+35
+00:02:38.535 --> 00:02:41.590
+Demonstrate that this algorithm is fast enough to provide
+
+36
+00:02:41.590 --> 00:02:46.684
+a real time encryption of 25 frames per second as well.
+
+37
+00:02:46.684 --> 00:02:50.780
+And finally, you need to implement the web connectivity.
+
+38
+00:02:50.780 --> 00:02:54.530
+First, you need a TCP server on a separate platform.
+
+39
+00:02:54.530 --> 00:02:58.235
+For example, you can use your laptop as a separate server,
+
+40
+00:02:58.235 --> 00:03:01.580
+or you can use another machine you have available.
+
+41
+00:03:01.580 --> 00:03:08.054
+Now, use your favorite language to implement the TCP server on selected machine.
+
+42
+00:03:08.054 --> 00:03:10.340
+The server can be made very simple,
+
+43
+00:03:10.340 --> 00:03:12.910
+but it should have the capability to read
+
+44
+00:03:12.910 --> 00:03:17.615
+the TCP connection and install the incoming frame data.
+
+45
+00:03:17.615 --> 00:03:19.545
+To stream the data,
+
+46
+00:03:19.545 --> 00:03:22.650
+you need a TCP client in FreeRTOS.
+
+47
+00:03:22.650 --> 00:03:26.210
+This TCP client should receive the encrypted frame from
+
+48
+00:03:26.210 --> 00:03:31.300
+the encryption task and stream it using the TCP connection.
+
+49
+00:03:31.300 --> 00:03:37.925
+Then you stream the encrypted data from your FreeRTOS system to your TCP server,
+
+50
+00:03:37.925 --> 00:03:44.915
+and you decrypt the incoming data to verify that the frame is correctly transmitted.
+
+51
+00:03:44.915 --> 00:03:52.105
+The function FreeRTOS_socket is available in FreeRTOS API.
+
+52
+00:03:52.105 --> 00:03:57.460
+This is the mechanism you need to transmit the data using a TCP connection.
+
+53
+00:03:57.460 --> 00:04:01.290
+Accordingly, you must set up the IP address of
+
+54
+00:04:01.290 --> 00:04:07.945
+the targeted server as well as target port and some other configuration parameters.
+
+55
+00:04:07.945 --> 00:04:10.602
+To get this all right,
+
+56
+00:04:10.602 --> 00:04:15.639
+please check the FreeRTOS API for creating it for socket.
+
+57
+00:04:15.639 --> 00:04:17.630
+So to set up the streaming,
+
+58
+00:04:17.630 --> 00:04:20.900
+you must configure the FreeRTOS to use
+
+59
+00:04:20.900 --> 00:04:25.905
+network sockets by studying FreeRTOS API as mentioned.
+
+60
+00:04:25.905 --> 00:04:30.185
+Implement the TCP client in FreeRTOS.
+
+61
+00:04:30.185 --> 00:04:35.405
+Implement the TCP server on the PC in any way you want.
+
+62
+00:04:35.405 --> 00:04:39.415
+Stream the data frame from FreeRTOS to the PC.
+
+63
+00:04:39.415 --> 00:04:44.775
+And finally, verify that transmitted frames are correct.
+
+64
+00:04:44.775 --> 00:04:48.170
+For more details about the tools and frameworks,
+
+65
+00:04:48.170 --> 00:04:52.110
+please check out the documentation and the provided API.
+
+66
+00:04:52.110 --> 00:04:54.545
+Also when trouble hits you,
+
+67
+00:04:54.545 --> 00:04:58.095
+Google and CourseForum are usually your friend.
+
+68
+00:04:58.095 --> 00:05:00.350
+Would you like a proper challenge?
+
+69
+00:05:00.350 --> 00:05:03.000
+Good. So let's get started.

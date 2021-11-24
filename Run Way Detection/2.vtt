@@ -1,0 +1,551 @@
+WEBVTT
+
+1
+00:00:00.620 --> 00:00:04.060
+Unfortunately we don't have
+access to a real space shuttle or
+
+2
+00:00:04.060 --> 00:00:05.900
+a commercial air craft.
+
+3
+00:00:05.900 --> 00:00:11.040
+So we need to somehow replicate
+the system on a PC and a software.
+
+4
+00:00:11.040 --> 00:00:14.670
+The point of this course
+to let you be creative.
+
+5
+00:00:14.670 --> 00:00:18.910
+We will not force you to make the project
+in a certain way, as long as it
+
+6
+00:00:18.910 --> 00:00:23.910
+follows some general guidelines and,
+of course, as long as it works.
+
+7
+00:00:23.910 --> 00:00:29.150
+This means it's a true engineering task
+from design to implementation and test.
+
+8
+00:00:30.280 --> 00:00:31.430
+In this course,
+
+9
+00:00:31.430 --> 00:00:35.228
+you would use free software to
+build the embedded platform for
+
+10
+00:00:35.228 --> 00:00:39.370
+wrong way detection and in this lecture
+we will teach you how to use the tool.
+
+11
+00:00:41.360 --> 00:00:45.800
+Initially, you are provided with parts
+of the algorithms using various parts of
+
+12
+00:00:45.800 --> 00:00:47.700
+wrong way detection systems.
+
+13
+00:00:47.700 --> 00:00:52.470
+And your task is to modify these
+algorithms to fit the system you are about
+
+14
+00:00:52.470 --> 00:00:57.640
+to use, integrate algorithms so
+that all parts of the system are able to
+
+15
+00:00:57.640 --> 00:01:03.100
+communicate and possibly integrate some
+new algorithms if deemed necessary.
+
+16
+00:01:05.320 --> 00:01:08.072
+For implementing the wrong
+way detection system,
+
+17
+00:01:08.072 --> 00:01:11.211
+we recommend you to use
+Microsoft Visual Studio Express.
+
+18
+00:01:11.211 --> 00:01:15.380
+However, you are allowed to use
+other tools such as Eclipse,
+
+19
+00:01:15.380 --> 00:01:17.864
+as long as you make the system work but
+
+20
+00:01:17.864 --> 00:01:22.532
+the guidelines we give you in this
+lecture is based on Visual Studio.
+
+21
+00:01:22.532 --> 00:01:27.006
+First, download the project
+template called wrong way
+
+22
+00:01:27.006 --> 00:01:30.660
+detection project from the course webpage.
+
+23
+00:01:30.660 --> 00:01:36.015
+Extract the files on your computer and
+you should see a folder
+
+24
+00:01:36.015 --> 00:01:41.696
+called FreeRTOS_v9.0.1 and
+this is the project folder.
+
+25
+00:01:41.696 --> 00:01:47.299
+Navigate with your windows
+explorer to the patch list and
+
+26
+00:01:47.299 --> 00:01:50.574
+open the file WIN32.vcxpoj.
+
+27
+00:01:50.574 --> 00:01:54.515
+It should now start your Visual Studio and
+import the project there.
+
+28
+00:01:57.359 --> 00:02:02.044
+Recall that this is the same pre artists
+environment as you were using in
+
+29
+00:02:02.044 --> 00:02:05.850
+the course,
+the development of real-time systems.
+
+30
+00:02:05.850 --> 00:02:07.740
+So, it should be a little bit familiar.
+
+31
+00:02:09.740 --> 00:02:13.270
+The left panel in the studio
+contains all the files that
+
+32
+00:02:13.270 --> 00:02:15.482
+are currently used in the project.
+
+33
+00:02:15.482 --> 00:02:22.030
+Click on main.c, go to the main
+function of the template project.
+
+34
+00:02:22.030 --> 00:02:26.560
+And in case you need to add more
+files to the project, simply drag and
+
+35
+00:02:26.560 --> 00:02:31.690
+drop the files into the Solution Explorer
+and it will be added to the project.
+
+36
+00:02:31.690 --> 00:02:34.438
+Note that only the source
+files must be added,
+
+37
+00:02:34.438 --> 00:02:38.888
+other files can be included without
+being added to the Solution Explorer.
+
+38
+00:02:41.477 --> 00:02:45.282
+Next, go to the main
+function in the main.c and
+
+39
+00:02:45.282 --> 00:02:49.670
+familiarize yourself with
+the code in this function.
+
+40
+00:02:50.680 --> 00:02:54.860
+The template contains currently only
+a dummy task called myTask, and
+
+41
+00:02:54.860 --> 00:02:58.536
+this task is being
+scheduled by the scheduler.
+
+42
+00:02:59.610 --> 00:03:04.524
+Next, click the play icon in the upper
+middle part of the Visual Studio to build
+
+43
+00:03:04.524 --> 00:03:06.490
+and run the project.
+
+44
+00:03:06.490 --> 00:03:10.860
+This will take a while as the studio
+is compiling the source files.
+
+45
+00:03:10.860 --> 00:03:14.250
+And when this is done you
+should get a console window
+
+46
+00:03:14.250 --> 00:03:16.310
+with a dummy task
+printing out hello world.
+
+47
+00:03:18.620 --> 00:03:22.080
+Okay, so you have Visual Studio up and
+running.
+
+48
+00:03:22.080 --> 00:03:24.420
+The next thing to do is
+to add an algorithm for
+
+49
+00:03:24.420 --> 00:03:26.281
+detecting the edges in a video frame.
+
+50
+00:03:27.410 --> 00:03:33.310
+The basic algorithm is provided to you
+on the course page in the file canny.c.
+
+51
+00:03:33.310 --> 00:03:38.020
+This file contains an algorithm
+which reads a bitmap image and
+
+52
+00:03:38.020 --> 00:03:39.270
+detects the edges.
+
+53
+00:03:40.650 --> 00:03:43.800
+The algorithm determines
+the edges as points
+
+54
+00:03:43.800 --> 00:03:46.850
+in a frame where the brightness
+changes sharply and
+
+55
+00:03:46.850 --> 00:03:51.370
+a collection of points for a line
+that can be visually seen as an edge.
+
+56
+00:03:52.900 --> 00:03:57.420
+The picture shows an example of
+detecting edges in an image.
+
+57
+00:03:57.420 --> 00:04:00.890
+And you can see that the filtered
+image contains only black and
+
+58
+00:04:00.890 --> 00:04:05.030
+white pixels where the white
+pixels are the edges in the image.
+
+59
+00:04:06.540 --> 00:04:09.450
+The implementation is
+based on Canny filter
+
+60
+00:04:09.450 --> 00:04:13.500
+which contains five steps
+to recognize the edges.
+
+61
+00:04:13.500 --> 00:04:18.939
+Apply Gaussian filter to smooth the image
+and reduce the impact of noise components.
+
+62
+00:04:20.150 --> 00:04:25.430
+Detect in which direction the edge is
+pointing by taking the blur in vertical,
+
+63
+00:04:25.430 --> 00:04:30.530
+horizontal, and diagonal direction by
+calculating the first order derivative
+
+64
+00:04:30.530 --> 00:04:32.760
+of the pixel line in each direction.
+
+65
+00:04:34.090 --> 00:04:39.471
+After these gradients are calculated,
+the edges are still blurry so
+
+66
+00:04:39.471 --> 00:04:44.850
+a non-maximum suppression is applied
+to team the edge by comparing
+
+67
+00:04:44.850 --> 00:04:50.030
+the edge strength of the pixel
+to its all neighbors.
+
+68
+00:04:50.030 --> 00:04:53.540
+If a pixel is the strongest,
+the neighbors will be suppressed.
+
+69
+00:04:54.710 --> 00:05:01.010
+After these, some pixels are still
+affected by color and noise variation so
+
+70
+00:05:01.010 --> 00:05:05.600
+edge pixels with a weak gradient
+values are filtered out and
+
+71
+00:05:05.600 --> 00:05:09.280
+edge pixels with high
+gradient value are preserved.
+
+72
+00:05:10.620 --> 00:05:14.360
+All edge pixels that
+are still defined as weak,
+
+73
+00:05:14.360 --> 00:05:17.770
+are checked according to
+their edge neighbors.
+
+74
+00:05:17.770 --> 00:05:24.120
+If a weak pixel is connected to a strong
+pixel, the big pixel is preserved.
+
+75
+00:05:25.930 --> 00:05:30.380
+More detailed information about Canny
+filter is available on its wiki page.
+
+76
+00:05:31.810 --> 00:05:33.190
+After edge detection,
+
+77
+00:05:33.190 --> 00:05:37.610
+you also need to encrypt the output of
+the algorithm before sending to the cloud.
+
+78
+00:05:39.080 --> 00:05:43.270
+We have provided a C-code for
+RSA algorithm in RSA.C file.
+
+79
+00:05:44.390 --> 00:05:48.800
+We introduced and discussed about
+RSA algorithm in more detail
+
+80
+00:05:48.800 --> 00:05:52.390
+in the course web connectivity and
+security in embedded systems.
+
+81
+00:05:53.410 --> 00:05:56.340
+The algorithm contains of three parts.
+
+82
+00:05:56.340 --> 00:05:59.560
+The first part of the code
+calculates the public and
+
+83
+00:05:59.560 --> 00:06:03.950
+private keys using predetermined
+prime numbers p and q.
+
+84
+00:06:04.950 --> 00:06:10.245
+You can set any prime numbers for p and
+q in the code but remember if you choose
+
+85
+00:06:10.245 --> 00:06:15.643
+very large prime numbers the algorithm
+will run slow to calculate the keys.
+
+86
+00:06:15.643 --> 00:06:21.331
+In the second part of the code, the
+encryption function encrypts the message.
+
+87
+00:06:21.331 --> 00:06:26.210
+In our case, the output of
+the edge detection algorithm will
+
+88
+00:06:26.210 --> 00:06:30.334
+be an array of integers
+with values of 0 or 255.
+
+89
+00:06:30.334 --> 00:06:35.246
+In a third part, the decryption
+function decrypts the message and
+
+90
+00:06:35.246 --> 00:06:38.740
+outputs the edge detection data.
+
+91
+00:06:38.740 --> 00:06:43.481
+You need to use your own creativity to
+utilize these codes in your program
+
+92
+00:06:43.481 --> 00:06:45.044
+wherever it is needed.
+
+93
+00:06:45.044 --> 00:06:50.768
+Your task is now to connect these
+algorithms by using freeRTOS.
+
+94
+00:06:50.768 --> 00:06:53.666
+So if you are giving some images or
+runways and
+
+95
+00:06:53.666 --> 00:06:56.800
+the edge detection and
+integration algorithm.
+
+96
+00:06:57.900 --> 00:07:01.640
+What you do is to create a freeRTOS
+task for edge detection and
+
+97
+00:07:01.640 --> 00:07:03.150
+you read this file into the path.
+
+98
+00:07:04.660 --> 00:07:09.110
+Next ,you implement the encryption task
+containing the encryption algorithm.
+
+99
+00:07:10.190 --> 00:07:12.590
+Now you need some way to transmit
+
+100
+00:07:12.590 --> 00:07:16.130
+the filtered image frame
+to the encryption task.
+
+101
+00:07:16.130 --> 00:07:20.420
+We recommend you here to use
+FreeRTOS Queue to reach you and
+
+102
+00:07:20.420 --> 00:07:23.670
+send a frame by the Edge detection task.
+
+103
+00:07:23.670 --> 00:07:26.480
+Now you can receive a frame
+by the Encryption task.
+
+104
+00:07:28.130 --> 00:07:32.070
+Finally, your job is to send
+the encrypted frame to the cloud server.
+
+105
+00:07:33.190 --> 00:07:36.530
+To do this, you need to forward
+the frame to a TCP client.
+
+106
+00:07:38.230 --> 00:07:43.410
+We recommend you to implement the TCP
+client as a FreeRTOS task, to which
+
+107
+00:07:43.410 --> 00:07:48.900
+you can again connect a freeRTOS Queue and
+you transmit the data over this queue.
+
+108
+00:07:50.240 --> 00:07:51.850
+From this point,
+
+109
+00:07:51.850 --> 00:07:57.320
+all you need to do is to transmit
+the encrypted frame to the cloud server.
+
+110
+00:07:57.320 --> 00:08:01.800
+In this server you must implement
+a task which is capable of reading,
+
+111
+00:08:01.800 --> 00:08:04.540
+decrypting and
+storing the transmitted frame.
+
+112
+00:08:06.210 --> 00:08:09.575
+In conclusion your job is to
+put three pieces together,
+
+113
+00:08:09.575 --> 00:08:13.490
+edge detection, encryption and
+network transmission.
+
+114
+00:08:14.530 --> 00:08:18.770
+In another lecture we will go more into
+detail about the implementation itself

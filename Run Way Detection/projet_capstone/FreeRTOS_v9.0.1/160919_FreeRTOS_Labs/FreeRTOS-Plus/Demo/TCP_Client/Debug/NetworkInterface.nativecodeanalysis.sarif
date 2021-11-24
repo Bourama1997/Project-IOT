@@ -1,0 +1,833 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.4.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'vWinPcapRecvThreadHandle' peut être '0' : ceci n'est pas conforme à la spécification de la fonction 'SetThreadAffinityMask'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                },
+                "region": {
+                  "startLine": 419,
+                  "startColumn": 3,
+                  "endLine": 419,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 378,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 383,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 388,
+                            "startColumn": 88
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 394,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 402,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 404,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 407,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 410,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "'vWinPcapRecvThreadHandle' peut avoir la valeur NULL"
+                        }
+                      },
+                      "kind": "déclaration",
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 10,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 419,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'vWinPcapRecvThreadHandle' est une entrée dans 'SetThreadAffinityMask' (déclarée au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\winbase.h:1670)"
+                        }
+                      },
+                      "kind": "utilisation",
+                      "importance": "important"
+                    },
+                    {
+                      "index": 11,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 419,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'vWinPcapRecvThreadHandle' ne doit pas être NULL, car cela n'est pas cohérent avec l'annotation SAL sur 'SetThreadAffinityMask'"
+                        }
+                      },
+                      "kind": "utilisation",
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'vWinPcapSendThreadHandle' peut être '0' : ceci n'est pas conforme à la spécification de la fonction 'SetThreadAffinityMask'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                },
+                "region": {
+                  "startLine": 431,
+                  "startColumn": 3,
+                  "endLine": 431,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 377,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 378,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 383,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 386,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 388,
+                            "startColumn": 88
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 394,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 402,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 404,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 407,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 410,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 10,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 419,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 11,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 422,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "'vWinPcapSendThreadHandle' peut avoir la valeur NULL"
+                        }
+                      },
+                      "kind": "déclaration",
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 12,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 431,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'vWinPcapSendThreadHandle' est une entrée dans 'SetThreadAffinityMask' (déclarée au niveau de c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\winbase.h:1670)"
+                        }
+                      },
+                      "kind": "utilisation",
+                      "importance": "important"
+                    },
+                    {
+                      "index": 13,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                          },
+                          "region": {
+                            "startLine": 431,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'vWinPcapSendThreadHandle' ne doit pas être NULL, car cela n'est pas cohérent avec l'annotation SAL sur 'SetThreadAffinityMask'"
+                        }
+                      },
+                      "kind": "utilisation",
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6330",
+          "message": {
+            "text": "'const char' passé comme _Param_(1)lorsque 'unsigned char' est requis dans l'appel à 'isspace'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                },
+                "region": {
+                  "startLine": 614,
+                  "startColumn": 7,
+                  "endLine": 614,
+                  "endColumn": 17
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "C6330",
+          "message": {
+            "text": "'const char' passé comme _Param_(1)lorsque 'unsigned char' est requis dans l'appel à 'isspace'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/admin/Desktop/cour/cour_video/Run_Way_Detection/projet_capstone/FreeRTOS_v9.0.1/160919_FreeRTOS_Labs/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/WinPCap/NetworkInterface.c"
+                },
+                "region": {
+                  "startLine": 616,
+                  "startColumn": 11,
+                  "endLine": 616,
+                  "endColumn": 21
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.27.29112.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX86\\x86\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00AD8190 -il C:\\Users\\admin\\AppData\\Local\\Temp\\_CL_42f67e55ast -typedil -f ..\\..\\Source\\FreeRTOS-Plus-TCP\\portable\\NetworkInterface\\WinPCap\\NetworkInterface.c -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1927 -D_MSC_FULL_VER=192729112 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\Common\\FreeRTOS_Plus_CLI_Demos\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\Common\\FreeRTOS_Plus_TCP_Demos\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-FAT\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-FAT\\portable\\common -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-TCP\\protocols\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-TCP\\portable\\BufferManagement -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\DemoTasks\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-TCP\\portable\\Compiler\\MSVC -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\WinPCap -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS\\Source\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS\\Source\\portable\\MSVC-MingW -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-CLI -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\TraceMacros\\Example1 -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Source\\FreeRTOS-Plus-TCP\\include -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client -nologo -W 4 -diagnostics:column -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_WIN32_WINNT=0x0500 -DWINVER=0x400 -D_CRT_SECURE_NO_WARNINGS -D_VC80_UPGRADE=0x0600 -D_MBCS -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_MT -D_DLL -GS -D_M_FP_PRECISE -Fo.\\Debug/NetworkInterface.obj -Fd.\\Debug/vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\ -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\AllRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -wd 4210 -wd 4127 -wd 4214 -wd 4201 -wd 4244 -wd 4310 -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Users\\admin\\Desktop\\cour\\cour_video\\Run_Way_Detection\\projet_capstone\\FreeRTOS_v9.0.1\\160919_FreeRTOS_Labs\\FreeRTOS-Plus\\Demo\\TCP_Client\\Include\\um",
+          "executionSuccessful": true,
+          "ruleConfigurationOverrides": []
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/portable/networkinterface/winpcap/networkinterface.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/freertos_tcp_ip.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/winpcap/pcap.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/winpcap/pcap/pcap.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/winpcap/remote-ext.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/winpcap/pcap-stdinc.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/winpcap/bittypes.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/winpcap/ip6_misc.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/freertosconfig.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/winpcap/pcap/bpf.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/freertos.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/projdefs.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/portable.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/deprecated_definitions.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/mpu_wrappers.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/portable/msvc-mingw/portmacro.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/task.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/list.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/semphr.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/freertosipconfig.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/queue.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/freertos_ip.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/tracemacros/example1/demoiptrace.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/freertosipconfigdefaults.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/freertos_errno_tcp.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/iptracemacrodefaults.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/portable/compiler/msvc/pack_struct_start.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/portable/compiler/msvc/pack_struct_end.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/freertos_ip_private.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/freertos_sockets.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/event_groups.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos/source/include/timers.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/freertos_stream_buffer.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/freertos_tcp_win.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/source/freertos-plus-tcp/include/networkbuffermanagement.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/admin/desktop/cour/cour_video/run_way_detection/projet_capstone/freertos_v9.0.1/160919_freertos_labs/freertos-plus/demo/tcp_client/winpcap/win32-extensions.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        }
+      ]
+    }
+  ]
+}

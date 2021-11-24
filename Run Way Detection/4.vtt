@@ -1,0 +1,197 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.550
+Okay, so what exactly you should provide to pass this course?
+
+2
+00:00:05.550 --> 00:00:07.975
+Let's define this more precisely,
+
+3
+00:00:07.975 --> 00:00:09.420
+as a list of deliverables.
+
+4
+00:00:09.420 --> 00:00:12.615
+There are two main things to provide,
+
+5
+00:00:12.615 --> 00:00:14.860
+code and the report.
+
+6
+00:00:14.860 --> 00:00:18.840
+The code includes all algorithms you have been using in
+
+7
+00:00:18.840 --> 00:00:23.400
+freeRTOS as well as the system code itself and the tasks.
+
+8
+00:00:23.400 --> 00:00:26.682
+In summary, you should make zip file on
+
+9
+00:00:26.682 --> 00:00:30.740
+all files and folders in the root directory of the project.
+
+10
+00:00:30.740 --> 00:00:33.960
+This package can then easily be extracted by
+
+11
+00:00:33.960 --> 00:00:37.850
+the reviewer and impor- imported to the original studio.
+
+12
+00:00:37.850 --> 00:00:41.480
+It will become a fairly large file, but this is okay.
+
+13
+00:00:41.480 --> 00:00:44.910
+Next, you need to
+
+14
+00:00:44.910 --> 00:00:49.109
+provide a written report about your design choices and the adoption of the algorithms.
+
+15
+00:00:49.109 --> 00:00:53.990
+More specifically, the report should include
+
+16
+00:00:53.990 --> 00:00:57.240
+configuration parameters of freeRTOS itself such
+
+17
+00:00:57.240 --> 00:01:00.885
+as parameters and freeRTOS coffee cup edge,
+
+18
+00:01:00.885 --> 00:01:04.152
+configurations about the TCP connection,
+
+19
+00:01:04.152 --> 00:01:08.440
+parameters regarded to scheduling and so on.
+
+20
+00:01:08.440 --> 00:01:12.670
+Details above all tasks created in freeRTOS,
+
+21
+00:01:12.670 --> 00:01:17.973
+including how you determine the schedule in freeRTOS?
+
+22
+00:01:17.973 --> 00:01:21.570
+How we integrated the edge detection algorithm and
+
+23
+00:01:21.570 --> 00:01:27.060
+a screen shot of running algorithm we did before and after a shot of an image.
+
+24
+00:01:27.060 --> 00:01:31.500
+Same story with the encryption algorithm.
+
+25
+00:01:31.500 --> 00:01:38.260
+You are- you also need to include the output from some encrypted data of your choice.
+
+26
+00:01:38.260 --> 00:01:43.459
+You also must explain how you implemented the TCP client and then
+
+27
+00:01:43.459 --> 00:01:49.610
+include the screenshot of the client transmitting data successfully to the TCP server.
+
+28
+00:01:49.610 --> 00:01:52.095
+Apart from the tasks,
+
+29
+00:01:52.095 --> 00:01:56.340
+you should include relevant code and explanation about how you
+
+30
+00:01:56.340 --> 00:02:00.300
+handle the communication between the tasks in freeRTOS,
+
+31
+00:02:00.300 --> 00:02:02.905
+and why such choices were made.
+
+32
+00:02:02.905 --> 00:02:07.650
+And finally a screenshot of the running TCP server on the PC
+
+33
+00:02:07.650 --> 00:02:12.890
+that is successfully receiving the data packets from the TCP client.
+
+34
+00:02:12.890 --> 00:02:14.765
+But hey, there is more.
+
+35
+00:02:14.765 --> 00:02:19.420
+Your report should include a discussion and references to relevant techniques and
+
+36
+00:02:19.420 --> 00:02:24.965
+hardware for interconnecting the camera to a real embedded hardware platform.
+
+37
+00:02:24.965 --> 00:02:31.555
+Specifically, you must discuss resolution and the picture quality needed.
+
+38
+00:02:31.555 --> 00:02:35.960
+How much energy is- is such as platform is consuming?
+
+39
+00:02:35.960 --> 00:02:39.510
+What is throughput requirement of the communication?
+
+40
+00:02:39.510 --> 00:02:42.495
+How about reliability?
+
+41
+00:02:42.495 --> 00:02:45.780
+And can you give a financial estimate of such a system?
+
+42
+00:02:45.780 --> 00:02:50.470
+The final part of the report should
+
+43
+00:02:50.470 --> 00:02:56.170
+include reference to choices for hardware platform and operating systems.
+
+44
+00:02:56.170 --> 00:03:02.110
+Particularly, explain the performance of the hardware and operating system,
+
+45
+00:03:02.110 --> 00:03:04.085
+the energy consumption,
+
+46
+00:03:04.085 --> 00:03:11.082
+the availability- can you easily get the hardware and operating system?
+
+47
+00:03:11.082 --> 00:03:13.090
+How about the costs?
+
+48
+00:03:13.090 --> 00:03:19.340
+And is this choice viable in a real industrial project?
+
+49
+00:03:19.340 --> 00:03:24.400
+Thanks for following the course and we wish you a good luck in implementing the project.

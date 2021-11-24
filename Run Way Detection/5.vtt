@@ -1,0 +1,225 @@
+WEBVTT
+
+1
+00:00:00.290 --> 00:00:06.320
+In this tutorial, we will make a Hello World example in freeRTOS.
+
+2
+00:00:09.050 --> 00:00:11.264
+To access the assignment,
+
+3
+00:00:11.264 --> 00:00:16.270
+you go through the Coursera web page and to assignment one folder.
+
+4
+00:00:17.270 --> 00:00:20.500
+Here, you download the freeRTOS zip file,
+
+5
+00:00:20.500 --> 00:00:23.830
+which will be used throughout the whole course.
+
+6
+00:00:32.360 --> 00:00:38.920
+To access a project, you extract the freeRTOS zip file in your Windows Explorer.
+
+7
+00:00:40.250 --> 00:00:44.515
+So, this will extract all the files into project template.
+
+8
+00:00:44.515 --> 00:00:47.700
+Now, you go into the freeRTOS folder.
+
+9
+00:00:47.700 --> 00:00:51.700
+Here, you go into the freeRTOS folder again,
+
+10
+00:00:51.740 --> 00:00:54.225
+and here you have the demo folder.
+
+11
+00:00:54.225 --> 00:00:56.305
+Please go into this folder.
+
+12
+00:00:56.305 --> 00:01:00.690
+Here, go into the WIN32 MSVC folder.
+
+13
+00:01:00.690 --> 00:01:07.095
+So, here we can start the WIN32 vcxproj file which will execute Visual Studio.
+
+14
+00:01:07.095 --> 00:01:12.305
+So now, Visual Studio will import all the files that are relevant to the project.
+
+15
+00:01:12.305 --> 00:01:17.250
+All these file can be seen to the left in the Solution Explorer.
+
+16
+00:01:22.780 --> 00:01:25.320
+To compile the project,
+
+17
+00:01:25.320 --> 00:01:29.500
+you simply click the play button in the panel above.
+
+18
+00:01:33.650 --> 00:01:38.910
+This will compile all the files that are included in the project template.
+
+19
+00:01:38.910 --> 00:01:40.830
+Once that is done,
+
+20
+00:01:40.830 --> 00:01:43.390
+it will execute the project.
+
+21
+00:01:52.150 --> 00:01:55.230
+So, as we can see when we execute the project,
+
+22
+00:01:55.230 --> 00:01:57.000
+we have just a simple blank window,
+
+23
+00:01:57.000 --> 00:02:00.955
+because we haven't actually added any tasks to the project.
+
+24
+00:02:00.955 --> 00:02:06.590
+Our next job is to add a Hello World task to the project.
+
+25
+00:02:08.340 --> 00:02:12.845
+To do so, we go to the main function in main.c.
+
+26
+00:02:12.845 --> 00:02:15.560
+Here we see the task scheduler function.
+
+27
+00:02:15.560 --> 00:02:18.605
+Now, we don't have any tasks to find.
+
+28
+00:02:18.605 --> 00:02:20.900
+So, that is what we need to do next.
+
+29
+00:02:20.900 --> 00:02:25.820
+To do so, we create a void function called HelloTask.
+
+30
+00:02:25.850 --> 00:02:30.650
+Inside this function, we create an infinite loop.
+
+31
+00:02:31.220 --> 00:02:36.660
+We make this infinite loop print out the statement, Hello World.
+
+32
+00:02:36.780 --> 00:02:40.220
+Just like this.
+
+33
+00:02:40.220 --> 00:02:41.335
+But we're not done yet.
+
+34
+00:02:41.335 --> 00:02:43.930
+We also need to add the period to the task.
+
+35
+00:02:43.930 --> 00:02:49.490
+That we do by adding a delay to the task.
+
+36
+00:02:49.490 --> 00:02:55.070
+We add the delay of one second or thousand milliseconds.
+
+37
+00:02:55.130 --> 00:03:00.550
+Now, we need to add the task to freeRTOS.
+
+38
+00:03:01.880 --> 00:03:07.180
+That is done by first creating a task handle.
+
+39
+00:03:07.180 --> 00:03:13.005
+So, we use the function xTaskHandle HT,
+
+40
+00:03:13.005 --> 00:03:16.140
+and then we need to add the task to freeRTOS.
+
+41
+00:03:16.140 --> 00:03:18.320
+So we create the task,
+
+42
+00:03:18.320 --> 00:03:24.090
+we pass the Hello World function, HelloTask.
+
+43
+00:03:24.090 --> 00:03:27.825
+We create a name for the task, HelloTask.
+
+44
+00:03:27.825 --> 00:03:30.675
+Then we set the stack size,
+
+45
+00:03:30.675 --> 00:03:32.010
+and the function is very small,
+
+46
+00:03:32.010 --> 00:03:36.900
+so we add the smallest possible stack size that we can set.
+
+47
+00:03:38.370 --> 00:03:42.250
+We don't pass any parameters of task,
+
+48
+00:03:42.250 --> 00:03:44.590
+but we add a priority of one.
+
+49
+00:03:44.590 --> 00:03:49.610
+Then we pass the reference to the task handle.
+
+50
+00:03:52.460 --> 00:03:54.850
+Now, the only thing we need to do,
+
+51
+00:03:54.850 --> 00:03:58.495
+is to recompile the task and see what happens.
+
+52
+00:03:58.495 --> 00:04:01.270
+So, we pressed the play button again.
+
+53
+00:04:01.580 --> 00:04:05.940
+Now, we can see the task is printing out Hello World every second,
+
+54
+00:04:05.940 --> 00:04:09.230
+and this was what the task was supposed to do.
+
+55
+00:04:11.510 --> 00:04:15.195
+Watching this video, you have now learned how to create
+
+56
+00:04:15.195 --> 00:04:19.200
+a simple periodic Hello World task in freeRTOS.
